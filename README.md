@@ -1,6 +1,6 @@
 # KediMeet browser extension
 
-Companion to [KediMeet](https://kedimeet.kedicode.cloud), a Mac app that records your calls and writes the
+Companion to [KediMeet](https://kedimeet.app), a Mac app that records your calls and writes the
 transcript and summary. The extension tells the app who is in a browser call and, where the page shows it reliably,
 who is speaking. KediMeet uses that to put names in the transcript.
 
