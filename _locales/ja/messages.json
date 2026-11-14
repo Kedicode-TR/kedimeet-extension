@@ -1,0 +1,135 @@
+{
+  "extName": {
+    "message": "KediMeet — ブラウザ通話"
+  },
+  "extDescription": {
+    "message": "ウェブ通話の参加者名と、判別できる場合は話者を KediMeet に伝えます。Google Meet、Teams、Zoom、Webex など。"
+  },
+  "searching": {
+    "message": "アプリを探しています…"
+  },
+  "connected": {
+    "message": "接続中"
+  },
+  "disconnected": {
+    "message": "未接続"
+  },
+  "rec": {
+    "message": "録音中"
+  },
+  "rec_time": {
+    "message": "録音中 $arg$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "idle": {
+    "message": "録音なし"
+  },
+  "title_rec": {
+    "message": "KediMeet が通話を録音しています"
+  },
+  "title_idle": {
+    "message": "KediMeet は通話を待っています"
+  },
+  "off_title": {
+    "message": "KediMeet が起動していません"
+  },
+  "off_sub": {
+    "message": "アプリを起動してください（メニューバーに常駐します）。起動していないと通話は録音されません。"
+  },
+  "nocall_title": {
+    "message": "通話ページではありません"
+  },
+  "nocall_sub": {
+    "message": "下のいずれかのプラットフォームで通話を開くと、KediMeet が発言に名前を付けます。"
+  },
+  "waiting_sub": {
+    "message": "参加者を待っています。通話に参加すると表示されます。"
+  },
+  "participants_other": {
+    "message": "通話中 · $count$ 人",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "participants_aria": {
+    "message": "参加者"
+  },
+  "note_nospeakers": {
+    "message": "$arg$ では話者を確実に判別できないため、KediMeet が声で話者を区別します。",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "note_background": {
+    "message": "タブがバックグラウンドのため、$arg$ は現在話者を表示していません。",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "you_tag": {
+    "message": "あなた"
+  },
+  "aria_self": {
+    "message": "あなた"
+  },
+  "aria_speaking": {
+    "message": "発言中"
+  },
+  "aria_muted": {
+    "message": "マイクオフ"
+  },
+  "speaking_title": {
+    "message": "発言中"
+  },
+  "muted_title": {
+    "message": "マイクオフ"
+  },
+  "consent_hint": {
+    "message": "参加者には録音が見えません — 伝えてください"
+  },
+  "consent_copy": {
+    "message": "チャット用のお知らせをコピー"
+  },
+  "consent_copied": {
+    "message": "コピーしました — 通話のチャットに貼り付けてください"
+  },
+  "platforms_title": {
+    "message": "対応サービス"
+  },
+  "ext_version": {
+    "message": "拡張機能 $arg$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint_zoom": {
+    "message": "Zoom で参加者リストを開くと、全員と話者が分かります。"
+  },
+  "hint_jazz": {
+    "message": "SaluteJazz で参加者リストを開くと、話者が分かります。"
+  },
+  "platform_telemost": {
+    "message": "Yandex Telemost"
+  },
+  "platform_vk": {
+    "message": "VK Calls"
+  },
+  "platform_ktalk": {
+    "message": "Kontur.Talk"
+  },
+  "platform_mtslink": {
+    "message": "MTS Link"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "extName": {
+    "message": "KediMeet — Browser-Calls"
+  },
+  "extDescription": {
+    "message": "Gibt KediMeet die Teilnehmernamen im Web-Call und, wo erkennbar, wer gerade spricht. Google Meet, Teams, Zoom, Webex und mehr."
+  },
+  "searching": {
+    "message": "Suche die App …"
+  },
+  "connected": {
+    "message": "Verbunden"
+  },
+  "disconnected": {
+    "message": "Keine Verbindung"
+  },
+  "rec": {
+    "message": "Aufnahme"
+  },
+  "rec_time": {
+    "message": "Aufnahme $arg$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "idle": {
+    "message": "Keine Aufnahme"
+  },
+  "title_rec": {
+    "message": "KediMeet nimmt den Call auf"
+  },
+  "title_idle": {
+    "message": "KediMeet wartet auf einen Call"
+  },
+  "off_title": {
+    "message": "KediMeet läuft nicht"
+  },
+  "off_sub": {
+    "message": "Starte es — es lebt in der Menüleiste. Ohne die App wird der Call nicht aufgenommen."
+  },
+  "nocall_title": {
+    "message": "Hier läuft kein Call"
+  },
+  "nocall_sub": {
+    "message": "Öffne einen Call auf einer der Plattformen unten — KediMeet beschriftet die Beiträge mit Namen."
+  },
+  "waiting_sub": {
+    "message": "Warte auf Teilnehmer — sie erscheinen, sobald du dem Call beitrittst."
+  },
+  "participants_one": {
+    "message": "Im Call · $count$ Teilnehmer",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "participants_other": {
+    "message": "Im Call · $count$ Teilnehmer",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "participants_aria": {
+    "message": "Teilnehmer"
+  },
+  "note_nospeakers": {
+    "message": "$arg$ zeigt nicht zuverlässig, wer spricht — KediMeet erkennt die Sprecher selbst an der Stimme.",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "note_background": {
+    "message": "Der Tab ist im Hintergrund — $arg$ zeigt gerade nicht an, wer spricht.",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "you_tag": {
+    "message": "du"
+  },
+  "aria_self": {
+    "message": "das bist du"
+  },
+  "aria_speaking": {
+    "message": "spricht"
+  },
+  "aria_muted": {
+    "message": "Mikrofon aus"
+  },
+  "speaking_title": {
+    "message": "Spricht"
+  },
+  "muted_title": {
+    "message": "Mikrofon aus"
+  },
+  "consent_hint": {
+    "message": "Die anderen sehen die Aufnahme nicht – sag es ihnen"
+  },
+  "consent_copy": {
+    "message": "Hinweis für den Chat kopieren"
+  },
+  "consent_copied": {
+    "message": "Kopiert – füge es in den Chat des Calls ein"
+  },
+  "platforms_title": {
+    "message": "Funktioniert mit"
+  },
+  "ext_version": {
+    "message": "Erweiterung $arg$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint_zoom": {
+    "message": "Öffne die Teilnehmerliste in Zoom — so sind alle und der Sprecher sichtbar."
+  },
+  "hint_jazz": {
+    "message": "Öffne die Teilnehmerliste in SaluteJazz — so ist der Sprecher sichtbar."
+  },
+  "platform_telemost": {
+    "message": "Yandex Telemost"
+  },
+  "platform_vk": {
+    "message": "VK Calls"
+  },
+  "platform_ktalk": {
+    "message": "Kontur.Talk"
+  },
+  "platform_mtslink": {
+    "message": "MTS Link"
+  }
+}

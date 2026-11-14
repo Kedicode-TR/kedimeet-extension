@@ -1,0 +1,143 @@
+{
+  "extName": {
+    "message": "KediMeet — llamadas en el navegador"
+  },
+  "extDescription": {
+    "message": "Da a KediMeet los nombres en una llamada web y, donde puede detectarlo, quién habla. Google Meet, Teams, Zoom, Webex…"
+  },
+  "searching": {
+    "message": "Buscando la app…"
+  },
+  "connected": {
+    "message": "Conectado"
+  },
+  "disconnected": {
+    "message": "Sin conexión"
+  },
+  "rec": {
+    "message": "Grabando"
+  },
+  "rec_time": {
+    "message": "Grabando $arg$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "idle": {
+    "message": "Sin grabar"
+  },
+  "title_rec": {
+    "message": "KediMeet está grabando la llamada"
+  },
+  "title_idle": {
+    "message": "KediMeet espera una llamada"
+  },
+  "off_title": {
+    "message": "KediMeet no está en ejecución"
+  },
+  "off_sub": {
+    "message": "Ábrelo: vive en la barra de menús. Sin él, la llamada no se grabará."
+  },
+  "nocall_title": {
+    "message": "Aquí no hay llamada"
+  },
+  "nocall_sub": {
+    "message": "Abre una llamada en una de las plataformas de abajo y KediMeet etiquetará cada intervención con un nombre."
+  },
+  "waiting_sub": {
+    "message": "Esperando participantes: aparecerán cuando te unas a la llamada."
+  },
+  "participants_one": {
+    "message": "En la llamada · $count$ participante",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "participants_other": {
+    "message": "En la llamada · $count$ participantes",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "participants_aria": {
+    "message": "Participantes"
+  },
+  "note_nospeakers": {
+    "message": "$arg$ no muestra de forma fiable quién habla: KediMeet distinguirá a los hablantes por la voz.",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "note_background": {
+    "message": "La pestaña está en segundo plano: $arg$ no muestra ahora quién habla.",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "you_tag": {
+    "message": "tú"
+  },
+  "aria_self": {
+    "message": "eres tú"
+  },
+  "aria_speaking": {
+    "message": "habla"
+  },
+  "aria_muted": {
+    "message": "micrófono apagado"
+  },
+  "speaking_title": {
+    "message": "Habla"
+  },
+  "muted_title": {
+    "message": "Micrófono apagado"
+  },
+  "consent_hint": {
+    "message": "Los participantes no ven la grabación — avísales"
+  },
+  "consent_copy": {
+    "message": "Copiar aviso para el chat"
+  },
+  "consent_copied": {
+    "message": "Copiado: pégalo en el chat de la llamada"
+  },
+  "platforms_title": {
+    "message": "Compatible con"
+  },
+  "ext_version": {
+    "message": "Extensión $arg$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint_zoom": {
+    "message": "Abre la lista de participantes en Zoom: así se ve a todos y quién habla."
+  },
+  "hint_jazz": {
+    "message": "Abre la lista de participantes en SaluteJazz: así se ve quién habla."
+  },
+  "platform_telemost": {
+    "message": "Yandex Telemost"
+  },
+  "platform_vk": {
+    "message": "VK Calls"
+  },
+  "platform_ktalk": {
+    "message": "Kontur.Talk"
+  },
+  "platform_mtslink": {
+    "message": "MTS Link"
+  }
+}

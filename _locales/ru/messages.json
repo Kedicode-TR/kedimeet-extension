@@ -1,0 +1,159 @@
+{
+  "extName": {
+    "message": "KediMeet — созвоны в браузере"
+  },
+  "extDescription": {
+    "message": "Передаёт KediMeet имена участников веб-созвона, а где может определить — и кто говорит. Google Meet, Teams, Zoom, Webex и другие."
+  },
+  "searching": {
+    "message": "Ищу приложение…"
+  },
+  "connected": {
+    "message": "На связи"
+  },
+  "disconnected": {
+    "message": "Нет связи"
+  },
+  "rec": {
+    "message": "Запись"
+  },
+  "rec_time": {
+    "message": "Запись $arg$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "idle": {
+    "message": "Не пишет"
+  },
+  "title_rec": {
+    "message": "KediMeet записывает созвон"
+  },
+  "title_idle": {
+    "message": "KediMeet ждёт созвона"
+  },
+  "off_title": {
+    "message": "KediMeet не запущен"
+  },
+  "off_sub": {
+    "message": "Запусти его — он живёт в строке меню. Без него созвон не запишется."
+  },
+  "nocall_title": {
+    "message": "Здесь не созвон"
+  },
+  "nocall_sub": {
+    "message": "Открой созвон на одной из платформ ниже — KediMeet подпишет реплики именами."
+  },
+  "waiting_sub": {
+    "message": "Жду участников — появятся, когда войдёшь в созвон."
+  },
+  "participants_one": {
+    "message": "В созвоне · $count$ участник",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "participants_few": {
+    "message": "В созвоне · $count$ участника",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "participants_many": {
+    "message": "В созвоне · $count$ участников",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "participants_other": {
+    "message": "В созвоне · $count$ участника",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "participants_aria": {
+    "message": "Участники"
+  },
+  "note_nospeakers": {
+    "message": "$arg$ не показывает надёжно, кто говорит, — спикеров KediMeet разметит сам, по голосам.",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "note_background": {
+    "message": "Вкладка в фоне — $arg$ сейчас не показывает, кто говорит.",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "you_tag": {
+    "message": "вы"
+  },
+  "aria_self": {
+    "message": "это ты"
+  },
+  "aria_speaking": {
+    "message": "говорит"
+  },
+  "aria_muted": {
+    "message": "микрофон выключен"
+  },
+  "speaking_title": {
+    "message": "Говорит"
+  },
+  "muted_title": {
+    "message": "Микрофон выключен"
+  },
+  "consent_hint": {
+    "message": "Собеседники не видят запись — предупреди их"
+  },
+  "consent_copy": {
+    "message": "Скопировать фразу для чата"
+  },
+  "consent_copied": {
+    "message": "Скопировано — вставь в чат созвона"
+  },
+  "platforms_title": {
+    "message": "Работает с"
+  },
+  "ext_version": {
+    "message": "Расширение $arg$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint_zoom": {
+    "message": "Открой список участников в Zoom — так видно всех и кто говорит."
+  },
+  "hint_jazz": {
+    "message": "Открой список участников в SaluteJazz — так видно, кто говорит."
+  },
+  "platform_telemost": {
+    "message": "Яндекс Телемост"
+  },
+  "platform_vk": {
+    "message": "VK Звонки"
+  },
+  "platform_ktalk": {
+    "message": "Контур.Толк"
+  },
+  "platform_mtslink": {
+    "message": "МТС Линк"
+  }
+}

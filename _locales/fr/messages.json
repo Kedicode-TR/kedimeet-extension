@@ -1,0 +1,143 @@
+{
+  "extName": {
+    "message": "KediMeet — appels dans le navigateur"
+  },
+  "extDescription": {
+    "message": "Donne à KediMeet les noms des participants d’un appel web et, quand c’est détectable, qui parle. Google Meet, Teams, Zoom, Webex…"
+  },
+  "searching": {
+    "message": "Recherche de l’app…"
+  },
+  "connected": {
+    "message": "Connecté"
+  },
+  "disconnected": {
+    "message": "Non connecté"
+  },
+  "rec": {
+    "message": "Enregistrement"
+  },
+  "rec_time": {
+    "message": "Enregistrement $arg$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "idle": {
+    "message": "Pas d’enregistrement"
+  },
+  "title_rec": {
+    "message": "KediMeet enregistre l’appel"
+  },
+  "title_idle": {
+    "message": "KediMeet attend un appel"
+  },
+  "off_title": {
+    "message": "KediMeet n’est pas lancé"
+  },
+  "off_sub": {
+    "message": "Lance-le : il vit dans la barre des menus. Sans lui, l’appel ne sera pas enregistré."
+  },
+  "nocall_title": {
+    "message": "Pas d’appel ici"
+  },
+  "nocall_sub": {
+    "message": "Ouvre un appel sur l’une des plateformes ci-dessous : KediMeet attribuera chaque réplique à un nom."
+  },
+  "waiting_sub": {
+    "message": "En attente des participants : ils apparaîtront quand tu rejoindras l’appel."
+  },
+  "participants_one": {
+    "message": "Dans l’appel · $count$ participant",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "participants_other": {
+    "message": "Dans l’appel · $count$ participants",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "participants_aria": {
+    "message": "Participants"
+  },
+  "note_nospeakers": {
+    "message": "$arg$ n’indique pas de façon fiable qui parle : KediMeet distinguera les voix lui-même.",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "note_background": {
+    "message": "L’onglet est en arrière-plan : $arg$ n’indique pas qui parle pour le moment.",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "you_tag": {
+    "message": "vous"
+  },
+  "aria_self": {
+    "message": "c’est toi"
+  },
+  "aria_speaking": {
+    "message": "parle"
+  },
+  "aria_muted": {
+    "message": "micro coupé"
+  },
+  "speaking_title": {
+    "message": "Parle"
+  },
+  "muted_title": {
+    "message": "Micro coupé"
+  },
+  "consent_hint": {
+    "message": "Les participants ne voient pas l’enregistrement — prévenez-les"
+  },
+  "consent_copy": {
+    "message": "Copier le message pour le chat"
+  },
+  "consent_copied": {
+    "message": "Copié — collez-le dans le chat de l’appel"
+  },
+  "platforms_title": {
+    "message": "Compatible avec"
+  },
+  "ext_version": {
+    "message": "Extension $arg$",
+    "placeholders": {
+      "arg": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint_zoom": {
+    "message": "Ouvre la liste des participants dans Zoom : on voit ainsi tout le monde et qui parle."
+  },
+  "hint_jazz": {
+    "message": "Ouvre la liste des participants dans SaluteJazz : on voit ainsi qui parle."
+  },
+  "platform_telemost": {
+    "message": "Yandex Telemost"
+  },
+  "platform_vk": {
+    "message": "VK Calls"
+  },
+  "platform_ktalk": {
+    "message": "Kontur.Talk"
+  },
+  "platform_mtslink": {
+    "message": "MTS Link"
+  }
+}

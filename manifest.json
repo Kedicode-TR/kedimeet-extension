@@ -1,0 +1,87 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "default_locale": "en",
+  "version": "0.5",
+  "description": "__MSG_extDescription__",
+  "icons": {
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "action": {
+    "default_title": "KediMeet",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon-16.png",
+      "32": "icon-32.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "alarms",
+    "offscreen",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://meet.google.com/*",
+        "https://teams.microsoft.com/*",
+        "https://teams.live.com/*",
+        "https://teams.cloud.microsoft/*",
+        "https://*.zoom.us/wc/*",
+        "https://*.webex.com/*",
+        "https://*.whereby.com/*",
+        "https://meet.jit.si/*",
+        "https://8x8.vc/*",
+        "https://telemost.yandex.ru/*",
+        "https://telemost.360.yandex.ru/*",
+        "https://salutejazz.ru/*",
+        "https://jazz.sber.ru/*",
+        "https://calls.vk.com/*",
+        "https://calls.vk.ru/*",
+        "https://vk.com/call/*",
+        "https://vk.ru/call/*",
+        "https://*.ktalk.ru/*",
+        "https://*.mts-link.ru/*",
+        "https://events.webinar.ru/*",
+        "https://my.webinar.ru/*"
+      ],
+      "js": [
+        "platforms.js",
+        "content.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://127.0.0.1:47811/*",
+    "https://meet.google.com/*",
+    "https://teams.microsoft.com/*",
+    "https://teams.live.com/*",
+    "https://teams.cloud.microsoft/*",
+    "https://*.zoom.us/wc/*",
+    "https://*.webex.com/*",
+    "https://*.whereby.com/*",
+    "https://meet.jit.si/*",
+    "https://8x8.vc/*",
+    "https://telemost.yandex.ru/*",
+    "https://telemost.360.yandex.ru/*",
+    "https://salutejazz.ru/*",
+    "https://jazz.sber.ru/*",
+    "https://calls.vk.com/*",
+    "https://calls.vk.ru/*",
+    "https://vk.com/call/*",
+    "https://vk.ru/call/*",
+    "https://*.ktalk.ru/*",
+    "https://*.mts-link.ru/*",
+    "https://events.webinar.ru/*",
+    "https://my.webinar.ru/*"
+  ]
+}

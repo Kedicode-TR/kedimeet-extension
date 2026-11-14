@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>KediMeet</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="top">
+    <img class="mark" src="icon-128.png" alt="" width="40" height="40">
+    <div class="brand">
+      <div class="title">KediMeet</div>
+      <div class="sub" id="link">…</div>
+    </div>
+    <div class="pill" id="pill" hidden></div>
+  </header>
+  <main id="main"></main>
+  <section class="consent" id="consent" hidden>
+    <p data-i18n="consent_hint"></p>
+    <button type="button" id="consent-copy" data-i18n="consent_copy"></button>
+  </section>
+  <section class="platforms" aria-labelledby="platforms-title">
+    <h2 id="platforms-title" data-i18n="platforms_title"></h2>
+    <ul class="chips" id="platforms"></ul>
+  </section>
+  <footer class="foot">
+    <span id="version-extension"></span>
+    <span id="version-app"></span>
+  </footer>
+  <script src="platforms.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
