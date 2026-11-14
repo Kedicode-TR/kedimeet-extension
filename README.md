@@ -119,4 +119,4 @@ The code is under the [MIT License](LICENSE).
 The interface icons in `popup.js` come from the free [Hugeicons](https://hugeicons.com) set, also MIT.
 
 The KediMeet name, the cat mascot and the `icon-*.png` files are not covered by the MIT License. They belong to
-KediCode and may be used unchanged as part of this extension.
+KediCode and may be used unchanged as part of this extension. Details are in [NOTICE](NOTICE).
