@@ -3,7 +3,7 @@
     "message": "KediMeet — ブラウザ通話"
   },
   "extDescription": {
-    "message": "ウェブ通話の参加者名と、判別できる場合は話者を KediMeet に伝えます。Google Meet、Teams、Zoom、Webex など。"
+    "message": "Mac 用アプリ KediMeet の拡張機能。通話の文字起こしで、話者に参加者の名前が付きます。Google Meet、Teams、Zoom、Webex など。"
   },
   "searching": {
     "message": "アプリを探しています…"
@@ -39,6 +39,15 @@
   },
   "off_sub": {
     "message": "アプリを起動してください（メニューバーに常駐します）。起動していないと通話は録音されません。"
+  },
+  "need_title": {
+    "message": "Mac 用アプリ KediMeet が必要です"
+  },
+  "need_sub": {
+    "message": "通話の録音と文字起こしはアプリが行います。この拡張機能は参加者の名前を渡すだけです。"
+  },
+  "get_app": {
+    "message": "アプリがない場合：KediMeet をダウンロード"
   },
   "nocall_title": {
     "message": "通話ページではありません"

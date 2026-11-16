@@ -2,6 +2,7 @@
 // Участников приносит фоновый скрипт (последний снимок вкладки в storage.session), состояние приложения —
 // GET /status: расширению с host_permissions на 127.0.0.1 CORS не нужен.
 const APP = 'http://127.0.0.1:47811';
+const SITE = 'https://kedimeet.app/?utm_source=extension'; // счётчик сайта считает заходы по utm_source
 const FRESH = 15000; // снимки идут хотя бы раз в 5 секунд — старше 15 секунд значит, созвона на вкладке уже нет
 
 // Hugeicons, свободный набор под MIT (@hugeicons/core-free-icons 4.4.0, stroke rounded): Power, Browser, Hourglass,
@@ -49,6 +50,7 @@ const TINTS = ['--blue', '--orange', '--purple', '--green'];
 const tint = name => TINTS[[...name].reduce((h, c) => (h * 31 + c.codePointAt(0)) >>> 0, 7) % TINTS.length];
 
 let status; // ответ /status; null — приложение не отвечает; undefined — ещё не спросили
+let appSeen; // приложение хоть раз отвечало (storage.local, ставят и фоновый скрипт, и окошко)
 let snapshot; // последний снимок созвона на этой вкладке
 let tab;
 
@@ -144,8 +146,17 @@ function renderMain() {
   const live = snapshot && Date.now() - snapshot.t < FRESH ? snapshot : undefined;
   const cards = [];
 
+  // Приложение не отвечает. Ни разу не отвечало — скорее всего, расширение поставили из магазина, а приложения нет:
+  // говорим, что оно нужно, а не «не запущено». В обоих случаях — где его взять
   if (status === null) {
-    cards.push(card('power', 'warn', t('off_title'), t('off_sub')));
+    const box = appSeen
+      ? card('power', 'warn', t('off_title'), t('off_sub'))
+      : card('power', 'warn', t('need_title'), t('need_sub'));
+    const get = el('a', 'note get', t('get_app'));
+    get.href = SITE;
+    get.target = '_blank';
+    box.append(get);
+    cards.push(box);
   }
 
   if (!platform) {
@@ -191,6 +202,7 @@ async function poll() {
   status = await fetch(`${APP}/status`, { cache: 'no-store' })
     .then(r => (r.status === 200 ? r.json() : r.ok ? {} : null))
     .catch(() => null);
+  if (status && !appSeen) chrome.storage.local.set({ appSeen: (appSeen = true) });
   render();
 }
 
@@ -201,6 +213,7 @@ async function poll() {
   [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   const key = `tab:${tab?.id}`;
   snapshot = (await chrome.storage.session.get(key))[key];
+  ({ appSeen } = await chrome.storage.local.get('appSeen'));
   chrome.storage.onChanged.addListener((changes, area) => {
     if (area !== 'session' || !(key in changes)) return;
     snapshot = changes[key].newValue;

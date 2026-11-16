@@ -3,7 +3,7 @@
     "message": "KediMeet — созвоны в браузере"
   },
   "extDescription": {
-    "message": "Передаёт KediMeet имена участников веб-созвона, а где может определить — и кто говорит. Google Meet, Teams, Zoom, Webex и другие."
+    "message": "Дополнение к приложению KediMeet для Mac: настоящие имена в стенограммах созвонов. Google Meet, Teams, Zoom, Webex и другие."
   },
   "searching": {
     "message": "Ищу приложение…"
@@ -39,6 +39,15 @@
   },
   "off_sub": {
     "message": "Запусти его — он живёт в строке меню. Без него созвон не запишется."
+  },
+  "need_title": {
+    "message": "Нужно приложение KediMeet для Mac"
+  },
+  "need_sub": {
+    "message": "Оно записывает созвоны и пишет стенограммы, а расширение только передаёт ему имена участников."
+  },
+  "get_app": {
+    "message": "Нет приложения? Скачай KediMeet для Mac"
   },
   "nocall_title": {
     "message": "Здесь не созвон"

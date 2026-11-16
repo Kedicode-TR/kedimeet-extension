@@ -3,7 +3,7 @@
     "message": "KediMeet — appels dans le navigateur"
   },
   "extDescription": {
-    "message": "Donne à KediMeet les noms des participants d’un appel web et, quand c’est détectable, qui parle. Google Meet, Teams, Zoom, Webex…"
+    "message": "Complément de l’app Mac KediMeet : vrais noms des intervenants dans vos transcriptions d’appels. Google Meet, Teams, Zoom, Webex…"
   },
   "searching": {
     "message": "Recherche de l’app…"
@@ -39,6 +39,15 @@
   },
   "off_sub": {
     "message": "Lance-le : il vit dans la barre des menus. Sans lui, l’appel ne sera pas enregistré."
+  },
+  "need_title": {
+    "message": "Il te faut l’app KediMeet pour Mac"
+  },
+  "need_sub": {
+    "message": "Elle enregistre les appels et écrit les transcriptions ; cette extension lui donne seulement les noms des participants."
+  },
+  "get_app": {
+    "message": "Pas d’app ? Télécharge KediMeet pour Mac"
   },
   "nocall_title": {
     "message": "Pas d’appel ici"

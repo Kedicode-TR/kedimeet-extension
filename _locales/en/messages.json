@@ -3,7 +3,7 @@
     "message": "KediMeet — browser calls"
   },
   "extDescription": {
-    "message": "Gives KediMeet participant names on a web call and, where it can tell, who is speaking. Google Meet, Teams, Zoom, Webex and more."
+    "message": "Companion to the KediMeet Mac app: real speaker names in your call transcripts. Google Meet, Teams, Zoom, Webex and more."
   },
   "searching": {
     "message": "Looking for the app…"
@@ -39,6 +39,15 @@
   },
   "off_sub": {
     "message": "Start it — it lives in the menu bar. Without it the call won’t be recorded."
+  },
+  "need_title": {
+    "message": "You need the KediMeet app for Mac"
+  },
+  "need_sub": {
+    "message": "It records calls and writes transcripts; this extension only gives it participant names."
+  },
+  "get_app": {
+    "message": "No app? Download KediMeet for Mac"
   },
   "nocall_title": {
     "message": "Not a call page"

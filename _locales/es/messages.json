@@ -3,7 +3,7 @@
     "message": "KediMeet — llamadas en el navegador"
   },
   "extDescription": {
-    "message": "Da a KediMeet los nombres en una llamada web y, donde puede detectarlo, quién habla. Google Meet, Teams, Zoom, Webex…"
+    "message": "Complemento de la app KediMeet para Mac: nombres reales de los hablantes en tus transcripciones. Google Meet, Teams, Zoom, Webex…"
   },
   "searching": {
     "message": "Buscando la app…"
@@ -39,6 +39,15 @@
   },
   "off_sub": {
     "message": "Ábrelo: vive en la barra de menús. Sin él, la llamada no se grabará."
+  },
+  "need_title": {
+    "message": "Necesitas la app KediMeet para Mac"
+  },
+  "need_sub": {
+    "message": "Graba las llamadas y escribe las transcripciones; esta extensión solo le pasa los nombres de los participantes."
+  },
+  "get_app": {
+    "message": "¿No tienes la app? Descarga KediMeet para Mac"
   },
   "nocall_title": {
     "message": "Aquí no hay llamada"

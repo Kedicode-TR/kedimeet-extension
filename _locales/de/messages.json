@@ -3,7 +3,7 @@
     "message": "KediMeet — Browser-Calls"
   },
   "extDescription": {
-    "message": "Gibt KediMeet die Teilnehmernamen im Web-Call und, wo erkennbar, wer gerade spricht. Google Meet, Teams, Zoom, Webex und mehr."
+    "message": "Ergänzung zur Mac-App KediMeet: echte Sprechernamen in deinen Call-Transkripten. Google Meet, Teams, Zoom, Webex und mehr."
   },
   "searching": {
     "message": "Suche die App …"
@@ -39,6 +39,15 @@
   },
   "off_sub": {
     "message": "Starte es — es lebt in der Menüleiste. Ohne die App wird der Call nicht aufgenommen."
+  },
+  "need_title": {
+    "message": "Du brauchst die KediMeet-App für den Mac"
+  },
+  "need_sub": {
+    "message": "Sie nimmt Calls auf und schreibt Transkripte – diese Erweiterung liefert ihr nur die Namen der Teilnehmer."
+  },
+  "get_app": {
+    "message": "Keine App? KediMeet für den Mac laden"
   },
   "nocall_title": {
     "message": "Hier läuft kein Call"

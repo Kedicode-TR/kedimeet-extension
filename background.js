@@ -51,15 +51,25 @@ chrome.offscreen?.createDocument({
 }).catch(() => {});
 chrome.action.setBadgeTextColor?.({ color: '#FFFFFF' });
 
+// Приложение ответило — запоминаем: окошко расширения отличает «не запущено» от «приложения нет вовсе»
+const seen = r => r.ok && chrome.storage.local.set({ appSeen: true });
+
 // Раз в минуту здороваемся с KediMeet — приложение знает, что расширение установлено, даже без созвонов.
 const hello = () =>
   fetch(`${APP}/hello`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ version: VERSION }),
-  }).catch(() => {});
+  }).then(seen, () => {});
 
-chrome.runtime.onInstalled.addListener(hello);
+// Расширение поставили, а приложение за секунду не ответило — скорее всего, его на этом Mac нет, а без него расширение
+// ничего не делает: открываем сайт, где его скачать (utm_source — счётчик сайта считает такие заходы отдельно)
+chrome.runtime.onInstalled.addListener(({ reason }) => {
+  if (reason !== 'install') return void hello();
+  fetch(`${APP}/status`, { signal: AbortSignal.timeout(1000) })
+    .then(seen, () => chrome.tabs.create({ url: 'https://kedimeet.app/?utm_source=extension' }))
+    .finally(hello);
+});
 chrome.runtime.onStartup.addListener(hello);
 chrome.alarms.onAlarm.addListener(alarm => alarm.name === 'hello' && hello());
 // Будильник переживает сон воркера, но не всегда перезапуск браузера — заводим, если его нет

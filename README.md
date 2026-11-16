@@ -30,7 +30,13 @@ Only to `http://127.0.0.1:47811`, which is the KediMeet app on the same Mac. The
 | `GET /status` | nothing; the answer says whether the app is recording |
 
 If the app is not running, snapshots are dropped. The last snapshot of each tab is kept in `chrome.storage.session`
-for the popup; the browser clears it when it closes.
+for the popup; the browser clears it when it closes. `chrome.storage.local` holds one flag, `appSeen`: whether the
+app has ever answered, so the popup can tell "not running" from "not installed".
+
+Right after you install the extension, it asks the app for its status. If nothing answers within a second, it opens
+`https://kedimeet.app/?utm_source=extension` in a new tab, where you can get the app. The `utm_source` only lets the
+site count visits that came from the extension; nothing else is sent. The popup links to the same page while the app
+is not answering.
 
 There is no analytics, no remote code and no other server. To check it yourself:
 
@@ -46,7 +52,7 @@ Every call goes to the `APP` constant at the top of `background.js` and `popup.j
 |---|---|
 | Call sites listed in `manifest.json` | read the participant tiles on the call page |
 | `http://127.0.0.1:47811/*` | talk to the KediMeet app on this Mac |
-| `storage` | keep the last snapshot of a tab for the popup, in session storage |
+| `storage` | keep the last snapshot of a tab for the popup, in session storage, and the `appSeen` flag |
 | `alarms` | the once-a-minute hello to the app |
 | `offscreen` | a windowless page that reports light or dark browser theme, to pick the toolbar icon |
 | `activeTab` | the popup shows which call platform the current tab is |
@@ -85,7 +91,11 @@ for the call chat.
 
 ## Install
 
-The extension ships inside the KediMeet app: Settings → Extension shows its folder and how to add it to the browser.
+Install it from the [Chrome Web Store](https://chromewebstore.google.com/detail/neehdpibfaapbpcffhlfenijflgghedg).
+It updates itself from there. The store version is built from this folder.
+
+A copy also ships inside the KediMeet app, for browsers that can't reach the store: Settings → Extension shows its
+folder and how to add it.
 
 From this repository:
 
@@ -93,7 +103,8 @@ From this repository:
 2. Turn on Developer mode.
 3. Click "Load unpacked" and choose this folder.
 
-It works in Chrome, Arc and other Chromium browsers. Without the KediMeet app it has nothing to talk to.
+It works in Chrome, Arc and other Chromium browsers. Without the KediMeet app it has nothing to talk to. The app is
+free: [kedimeet.app](https://kedimeet.app).
 
 ## Develop
 
